@@ -13,3 +13,20 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+// Personalizando navbar open
+const navbarToggler = document.querySelector('.navbar-toggler');
+
+navbarToggler.addEventListener('click', () => {
+  navbarToggler.classList.toggle('open');
+});
+
+//  Fechando a nav bar
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const navMenu = document.querySelector('.navbar-collapse');
+    navMenu.classList.remove('show');
+    navbarToggler.classList.toggle('open');  // Aqui volta para modelo inicial da navbar
+  });
+});
