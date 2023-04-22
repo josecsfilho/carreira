@@ -156,7 +156,7 @@ img {
         border: 8px solid var(--color-brand);
     }
 
-    /* CONTENT WRAPPER */
+    /*  CONTENT WRAPPER  */
     #content-wrapper {
         padding-left: var(--sidbar-width);
     }
