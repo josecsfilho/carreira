@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Overpass+Mono:wght@400;500;600;700&display=swap');
 
 :root {
     --color-body: #b6cbce;
     --color-heading: #eef3db;
     --color-base: #033f47;
     --color-base2: #022a30;
-/*     --color-brand: #e0f780;
-    --color-brand2: #deff58; */
     --color-brand: #44CECE;
     --color-brand2: #8BE7E7;
     --sidbar-width: 240px;
-    --font-base: "Bai Jamjuree";
+    --font-base: "Overpass Mono";
 }
 
 body {
@@ -161,11 +160,15 @@ img {
     #content-wrapper {
         padding-left: var(--sidbar-width);
     }
+
+    .my-contact-section {
+        overflow: hidden;
+      }
 }
 
 /* BTN */
 .btn {
-    padding: 12px 28px;
+    padding: 5px 14px;
     font-weight: 700;
 }
 
@@ -230,21 +233,27 @@ img {
 
 #contact .form-control::placeholder {
     color: var(--color-body);
+    
 }
 
 #contact input.form-control {
-    height: 44px;
+    height: 40px;
+    overflow: hidden;
 }
 
 /* SOCIAL ICONS */
 
 .social-icons a {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-base);
     border-radius: 100px;
-    font-size: 24px;
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); 
 }
