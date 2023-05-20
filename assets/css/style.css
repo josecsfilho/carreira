@@ -285,19 +285,6 @@ img {
     margin-right: 10px;
   }
   
-  
-
-/* .social-icons a {
-    width: 45px;
-    height: 45px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    font-size: 40px;
-    transition: transform 0.3s ease-in-out; 
-  }
-   */
 
 .social-icons a:hover {
     transform: scale(1.2); 
